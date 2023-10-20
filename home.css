@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'poppins', 'sans-serif';
+}
+/* * artinya universal */
+
+/* Navbar */
+nav{
+    background-color: black; 
+    padding: 20px;
+}
+
+nav .nav-bar{
+    width: fit-content;
+    margin: auto;
+}
+
+nav .nav-bar li{
+    display: inline;
+    padding: 0px 20px;
+}
+
+nav .nav-bar li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Home */
+.home{
+    background-image: url(../img/bg1.jpg);
+    height: 100vh;
+    background-position: 5px;
+    background-size: cover;
+}
+.home .home-isi{
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.home .home-isi h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.home .home-isi p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.home .home-isi .home-input {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+.home .home-isi .home-input span{
+    color: white;
+}
+
+.home .home-isi .home-input button{
+    background-color: #865439;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+/* About */
+
+.about {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px ;
+    background-color: #423f3e;
+}
+.about .about-kiri {
+    padding: 20px;
+    width: 50%;
+    float: left;
+}
+
+.about .about-kiri h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.about .about-kiri span {
+    color: #865439;
+}
+
+.about .about-kiri p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.about .about-kanan{
+    width: 50%;
+    float: left;
+}
+.about .about-kanan img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+} 
+.clear {
+    clear: left;
+}
+
+/* Menu */
+.menu {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.menu .card .card-atas{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50%;
+}
+.menu .card .card-atas img{
+    width: 100%;
+}
+.menu .card{
+    background-color:#cdbba7;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    float: left;
+    margin: 0 50px;
+}
+
+.menu .card .card-bawah{
+    padding: 20px;
+}
+
+.menu .card .card-bawah h4{
+    font-size: 22px;
+}
+
+.menu .card .card-bawah p{
+    font-size: 15px;
+}
+
+.menu .card .card-bawah button{
+    background-color: #b85c38;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* Contact Us */
+.contact-us{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.contact-us h4{
+    font-size: 50px;
+    width: fit-content;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.contact-us h4 span{
+    color: #865439;
+}
+.contact-us form{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+.contact-us form .labelS{
+    display: block;
+}
+.contact-us form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    outline: none; /* untuk menghilangkan outline yang muncul saat memasukkan input */
+}
+.contact-us form .check{
+    width: fit-content;
+    display: inline;
+}
+
+.contact-us form textarea{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.contact-us button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #b85c38;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+
+}
+/* Media query */
+/* berfungsi agar website yang kita buat sesuai ukutan dengan
+semua device */
+
+@media screen and(max-width:768px){
+    
+}
+
+/* 
+
+max-width = maksimal layar device
+jadi semua layar yang ukurannya dibawah max-width akan mengeksekusi kode
+min-device = minimal layar device
+
+3840 -> tv 4k
+769 - 1440 -> laptop
+768 -> lebar tablet
+542 -> lebar hp
+*/
